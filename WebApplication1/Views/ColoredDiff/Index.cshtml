@@ -1,0 +1,9 @@
+﻿@model CruftyWeb.Models.ColoredDiffModel
+@{
+    ViewBag.Title = "Colored Diff";
+}
+
+<h2>Colored Diff of @Model.CourtWebsite.CourtName</h2>
+<hr/>
+@Html.Raw(Model.CourtWebsite.DiffedHtml)
+
