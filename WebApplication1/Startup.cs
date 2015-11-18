@@ -1,5 +1,6 @@
 ﻿using Microsoft.Owin;
 using Owin;
+using Crufty;
 
 [assembly: OwinStartupAttribute(typeof(CruftyWeb.Startup))]
 namespace CruftyWeb
@@ -8,7 +9,7 @@ namespace CruftyWeb
     {
         public void Configuration(IAppBuilder app)
         {
-            ConfigureAuth(app);
+            
         }
     }
 }

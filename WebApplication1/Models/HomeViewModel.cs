@@ -13,6 +13,8 @@ namespace CruftyWeb.Models
                 websites = new List<CourtWebsite>();
         }
 
-        List<CourtWebsite> websites { get; set; }
+        public List<CourtWebsite> websites { get; set; }
+
+
     }
 }

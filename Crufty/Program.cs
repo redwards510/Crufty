@@ -14,33 +14,10 @@ using ScrapySharp.Extensions;
 using ScrapySharp.Network;
 using ScrapySharp.Html.Forms;
 using ScrapySharp.Html;
+using Crufty;
 
 namespace Crufty
 {
-    public class CourtWebsite
-    {
-        [BsonId]
-        public Guid Id { get; set; }
-
-        public string CourtName { get; set; }
-        public string CourtKey { get; set; }
-
-        public string Url { get; set; }
-        public string OldPageHtml { get; set; }
-        public string NewPageHtml { get; set; }
-
-        public string DiffedHtml { get; set; }
-
-        public DateTime LastChangedDateTime { get; set; }
-
-        public string SelectionXPathString { get; set; }
-
-        public bool Checked { get; set; }
-
-        public DateTime LastRunDateTime { get; set; }
-        public string AddedWords { get; set; }
-        public string RemovedWords { get; set; }
-    }
 
 
 

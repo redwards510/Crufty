@@ -25,7 +25,11 @@ namespace CruftyWeb
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/Site.css",
+                      "~/Content/Diff.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/diff").Include(
+                "~/Scripts/Diff.js"));
         }
     }
 }
