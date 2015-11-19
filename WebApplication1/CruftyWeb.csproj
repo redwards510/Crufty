@@ -234,6 +234,7 @@
     <Content Include="Views\ColoredDiff\Index.cshtml" />
     <Content Include="Views\SideBySideDiff\DiffPane.cshtml" />
     <Content Include="Views\SideBySideDiff\DiffLine.cshtml" />
+    <Content Include="Views\Home\CourtRow.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

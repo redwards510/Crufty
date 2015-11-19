@@ -70,5 +70,15 @@ namespace CruftyWeb.Helpers
                 await GetCourtWebSiteCollection().InsertOneAsync(courtWebsite);
             }).Wait();
         }
+
+        public static void MarkCourtAsChecked(Guid id)
+        {            
+            Task.Run(async () =>
+            {
+                var filter = Builders<CourtWebsite>.Filter.Eq("Id", id);
+                var update = Builders<CourtWebsite>.Update.Set("Checked", true);
+                await GetCourtWebSiteCollection().UpdateOneAsync(filter, update);
+            }).Wait();            
+        }
     }
 }

@@ -1,0 +1,68 @@
+﻿@model Crufty.CourtWebsite
+@using (Html.BeginForm("Mark", "Home", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.Id)
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>@Html.DisplayTextFor(x => x.CourtName)</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-8">
+            <h5>@Html.DisplayTextFor(x => x.Url)</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1">
+            @Html.Label("XPath ")
+        </div>
+        <div class="col-xs-8">
+            @Html.TextBoxFor(x => x.SelectionXPathString)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2">
+            @Html.Label("Court Key")
+        </div>
+        <div class="col-xs-8">
+            @Html.DisplayTextFor(x => x.CourtKey)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1">
+            @Html.Label("Last Run")
+        </div>
+        <div class="col-xs-2">
+            @Html.DisplayTextFor(x => x.LastRunDateTime)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1">
+            @Html.Label("Last Change")
+        </div>
+        <div class="col-xs-2">
+            @Html.DisplayTextFor(x => x.LastChangedDateTime)
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-3">
+            <h4>Checked? &nbsp;@Html.CheckBoxFor(x => x.Checked)</h4>
+        </div>
+        <div class="col-lg-3">
+            <input type="submit" id="Mark" class="btn btn-sm" value="Mark as Checked"/>
+            <script type="text/javascript">
+                //$('#Mark')
+            </script>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3">
+            <h4><a href="~/SideBySideDiff?id=@Model.Id">Side By Side Changes</a></h4>
+        </div>
+        <div class="col-xs-3">
+            <h4><a href="~/ColoredDiff?id=@Model.Id">Alternate View of Changes</a></h4>
+        </div>
+    </div>
+    <hr/>
+}

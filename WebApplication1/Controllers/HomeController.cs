@@ -29,5 +29,12 @@ namespace CruftyWeb.Controllers
             Helpers.MongoDbService.InsertNewCourt(model.CourtName, model.Url, model.CourtKey, model.XPath);
             return RedirectToAction("Index", "Home");
         }
+
+        [HttpPost]
+        public ActionResult Mark(CourtWebsite model)
+        {
+            Helpers.MongoDbService.MarkCourtAsChecked(model.Id);
+            return RedirectToAction("Index");
+        }
     }
 }
