@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using Crufty;
+using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace CruftyWeb.Helpers
@@ -34,17 +35,40 @@ namespace CruftyWeb.Helpers
             return GetCourtWebSite(guidId);
         }
 
-        public static IEnumerable<CourtWebsite> GetCourtWebsites(bool checkedOnly = false)
+        public static IEnumerable<CourtWebsite> GetCourtWebsites(bool displayAll = false)
         {
             var collection = GetCourtWebSiteCollection();
-            List<CourtWebsite> websites = new List<CourtWebsite>();
+            List<CourtWebsite> websites = new List<CourtWebsite>();            
+
             Task.Run(async () =>
             {
-                var filter = Builders<CourtWebsite>.Filter.Eq("Checked", checkedOnly);
+                var filter = (displayAll) ? new BsonDocument() : Builders<CourtWebsite>.Filter.Eq("Checked", false);
                 websites = await collection.Find(filter).ToListAsync();
             }).Wait();
 
             return websites;
+        }
+
+        public static void InsertNewCourt(string courtName, string url, string courtKey, string xPath)
+        {
+            var courtWebsite = new CourtWebsite
+            {
+                Id = Guid.NewGuid(),
+                Url = url,
+                CourtName = courtName,
+                OldPageHtml = "Never Diffed",
+                NewPageHtml = "Never Diffed",
+                DiffedHtml = "Never Diffed",
+                LastChangedDateTime = DateTime.MinValue,
+                LastRunDateTime = DateTime.MinValue,
+                SelectionXPathString = xPath,
+                Checked = false               
+            };
+
+            Task.Run(async () =>
+            {
+                await GetCourtWebSiteCollection().InsertOneAsync(courtWebsite);
+            }).Wait();
         }
     }
 }

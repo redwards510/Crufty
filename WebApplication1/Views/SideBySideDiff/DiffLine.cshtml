@@ -16,7 +16,7 @@
         {
             if (character.Type == ChangeType.Imaginary)
             { continue; }
-            <span class="@Html.Raw(character.Type.ToString())Character">@Html.Encode(character.Text.Replace(" ", spaceValue.ToString()))</span>
+            <span class="@Html.Raw(character.Type.ToString())Character">@Html.Raw(@Html.Encode(character.Text.Replace(" ", spaceValue.ToString())))</span>
         }
     }
 }

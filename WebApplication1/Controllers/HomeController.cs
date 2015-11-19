@@ -14,11 +14,20 @@ namespace CruftyWeb.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index(string displayAll)
         {
+            bool showAll = (displayAll != null) && Convert.ToBoolean(displayAll);
             var model = new HomeViewModel();
-            model.websites = Helpers.MongoDbService.GetCourtWebsites(false).ToList();
+            model.Websites = Helpers.MongoDbService.GetCourtWebsites(showAll).ToList();
+            model.DisplayAll = showAll;
             return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult AddNewSite(HomeViewModel model)
+        {
+            Helpers.MongoDbService.InsertNewCourt(model.CourtName, model.Url, model.CourtKey, model.XPath);
+            return RedirectToAction("Index", "Home");
         }
     }
 }

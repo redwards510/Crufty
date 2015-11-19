@@ -76,9 +76,8 @@ namespace Crufty
                         
                         if (courtWebsite.NewPageHtml != currentPage)
                         {
-                            HtmlDiff diffHelper = new HtmlDiff(courtWebsite.OldPageHtml, courtWebsite.NewPageHtml);
-                            // add this style info in or we won't see the highlighted changes! 
-                            courtWebsite.DiffedHtml = diffHelper.Build().Insert(0, @"<style>ins {background-color: #cfc;text-decoration: none;} del {    color: #999;    background-color:#FEC8C8;</style>");                            
+                            HtmlDiff diffHelper = new HtmlDiff(courtWebsite.NewPageHtml, currentPage);                            
+                            courtWebsite.DiffedHtml = diffHelper.Build().Insert(0, "<style>ins {background-color: #cfc;text-decoration: none;} del {    color: #999;    background-color:#FEC8C8;</style>");
                             courtWebsite.OldPageHtml = courtWebsite.NewPageHtml;
                             courtWebsite.NewPageHtml = currentPage;
                             courtWebsite.LastChangedDateTime = DateTime.Now;
