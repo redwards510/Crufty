@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using Helpers;
 using HtmlAgilityPack;
 using MongoDB.Bson;
@@ -20,8 +22,10 @@ using Serilog;
 
 namespace Crufty
 {
+
     public class CruftyConsole
     {
+
         static void Main(string[] args)
         {
             Log.Logger = new LoggerConfiguration()
@@ -30,7 +34,7 @@ namespace Crufty
             var log = Log.Logger.ForContext<Crufty.CruftyConsole>();
 
             // get list of all courts to process
-            var client = new MongoClient("mongodb://dev-web-ext");
+            var client = new MongoClient(ConfigurationManager.AppSettings["MongoServer"]);
             var database = client.GetDatabase("CourtCruft");
             var collection = database.GetCollection<CourtWebsite>("CourtWebsites");
             List<CourtWebsite> documents = new List<CourtWebsite>();
@@ -60,8 +64,7 @@ namespace Crufty
 
                     if (String.IsNullOrWhiteSpace(currentPage))
                     {
-                        log.With("CourtWebsite", courtWebsite)
-                            .Error("Unable to find {XPath} in {Url}", courtWebsite.SelectionXPathString, courtWebsite.Url);
+                        log.Error("Unable to find {XPath} in {Url}", courtWebsite.SelectionXPathString, courtWebsite.Url);
                         continue;
                     }
 
@@ -74,8 +77,7 @@ namespace Crufty
                         courtWebsite.LastChangedDateTime = DateTime.Now;
                         courtWebsite.Checked = false;
 
-                        log.With("CourtWebsite", courtWebsite)
-                            .Information("Changes found for {CourtName}", courtWebsite.CourtName);
+                        log.Information("Changes found for {CourtName}", courtWebsite.CourtName);
                     }
 
                     courtWebsite.LastRunDateTime = DateTime.Now;
@@ -86,18 +88,16 @@ namespace Crufty
                         await collection.ReplaceOneAsync(filter, courtWebsite);
                     }).Wait();
 
-                    log.With("CourtWebsite", courtWebsite)
-                            .Information("Successfully scraped site {CourtName}", courtWebsite.CourtName);
+                    log.Verbose("Successfully scraped site {CourtName}", courtWebsite.CourtName);
                 }
                 catch (WebException exception)
                 {
-                    log.With("CourtWebsite", courtWebsite )
-                        .Error(exception, "Web Exception {ExceptionMessage} (check the url) {url}", exception.Message, courtWebsite.Url);
+                    log.Error(exception, "Web Exception for {CourtName} (check the url) {ExceptionMessage} {url}", courtWebsite.CourtName, exception.Message, courtWebsite.Url);
                 }
                 catch (Exception exception)
                 {
                     log.With("CourtWebsite", courtWebsite)
-                        .Error(exception, "General Exception {ExceptionMessage}", exception.Message);
+                        .Error(exception, "General Exception for {CourtName} {ExceptionMessage}", courtWebsite.CourtName, exception.Message);
                 }
             }
         } // end main
