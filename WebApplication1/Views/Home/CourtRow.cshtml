@@ -1,5 +1,5 @@
 ﻿@model Crufty.CourtWebsite
-@using (Html.BeginForm("Mark", "Home", FormMethod.Post, new { @id=Model.Id }))
+@using (Html.BeginForm("Mark", "Home", FormMethod.Post, new { @id = Model.Id }))
 {
     @Html.HiddenFor(x => x.Id)
     <div class="row">
@@ -19,14 +19,17 @@
         <div class="col-xs-8">
             @Html.TextBoxFor(x => x.SelectionXPathString)
             <input type="button" id='btn-@(Model.Id)' class="btn" value="Save XPath"/>
+            <button type="button" class="btn btn-default" aria-label="Left Align" style="display: none;" id="btn-xpath-@(Model.Id)">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            </button>
         </div>
         <script type="text/javascript">
-            $(function() {
-                $('#btn-@(Model.Id)').click(function() {
+            $(function () {
+                $('#btn-@(Model.Id)').click(function () {
                     $.post("/Home/UpdateXPath", { guid: "@(Model.Id)", xPath: "@(Model.SelectionXPathString)" })
-                        .done(function (data) {
-                            console.log("success");
-                        });                    
+                        .done(function (data) {                            
+                            $('#btn-xpath-@(Model.Id)').show();
+                        });
                 });
             });
 
@@ -62,9 +65,22 @@
             <h4>Checked? &nbsp;@Html.CheckBoxFor(x => x.Checked)</h4>
         </div>
         <div class="col-lg-3">
-            <input type="submit" id="Mark" class="btn btn-sm" value="Mark as Checked"/>
+            @if (!@Model.Checked)
+            {
+                <input type="button" id='btnMark-@(Model.Id)' class="btn" value="Mark as Checked" />
+                <button type="button" class="btn btn-default" aria-label="Left Align" style="display: none;" id="btn-ok-@(Model.Id)">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true" ></span>
+                </button>
+            }
             <script type="text/javascript">
-                $.post()
+                $(function () {
+                    $('#btnMark-@(Model.Id)').click(function () {
+                        $.post("/Home/Mark", { guid: "@(Model.Id)" })
+                            .done(function (data) {                                
+                                $('#btn-ok-@(Model.Id)').show();
+                            });
+                    });
+                });
             </script>
         </div>
     </div>
@@ -76,5 +92,5 @@
             <h4><a href="~/ColoredDiff?id=@Model.Id">Alternate View of Changes</a></h4>
         </div>
     </div>
-    <hr/>
+    <hr />
 }

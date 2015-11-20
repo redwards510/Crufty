@@ -32,9 +32,9 @@ namespace CruftyWeb.Controllers
         }
 
         [HttpPost]
-        public ActionResult Mark(CourtWebsite model)
+        public ActionResult Mark(string guid)
         {
-            Helpers.MongoDbService.MarkCourtAsChecked(model.Id);
+            Helpers.MongoDbService.MarkCourtAsChecked(Guid.Parse(guid));
             return RedirectToAction("Index");
         }
 
