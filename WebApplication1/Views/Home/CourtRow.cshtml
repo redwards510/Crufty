@@ -1,5 +1,5 @@
 ﻿@model Crufty.CourtWebsite
-@using (Html.BeginForm("Mark", "Home", FormMethod.Post))
+@using (Html.BeginForm("Mark", "Home", FormMethod.Post, new { @id=Model.Id }))
 {
     @Html.HiddenFor(x => x.Id)
     <div class="row">
@@ -18,7 +18,19 @@
         </div>
         <div class="col-xs-8">
             @Html.TextBoxFor(x => x.SelectionXPathString)
+            <input type="button" id='btn-@(Model.Id)' class="btn" value="Save XPath"/>
         </div>
+        <script type="text/javascript">
+            $(function() {
+                $('#btn-@(Model.Id)').click(function() {
+                    $.post("/Home/UpdateXPath", { guid: "@(Model.Id)", xPath: "@(Model.SelectionXPathString)" })
+                        .done(function (data) {
+                            console.log("success");
+                        });                    
+                });
+            });
+
+        </script>
     </div>
     <div class="row">
         <div class="col-xs-2">
@@ -52,7 +64,7 @@
         <div class="col-lg-3">
             <input type="submit" id="Mark" class="btn btn-sm" value="Mark as Checked"/>
             <script type="text/javascript">
-                //$('#Mark')
+                $.post()
             </script>
         </div>
     </div>

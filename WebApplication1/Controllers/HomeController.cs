@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using System.Xml.Serialization;
 using MongoDB;
 using MongoDB.Driver;
 using Crufty;
@@ -35,6 +36,15 @@ namespace CruftyWeb.Controllers
         {
             Helpers.MongoDbService.MarkCourtAsChecked(model.Id);
             return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        [ValidateInput(false)]
+        public void UpdateXPath(string guid, string xPath)
+        {
+            xPath = HttpUtility.HtmlDecode(xPath);
+            xPath = HttpUtility.HtmlDecode(xPath); // two are needed
+            Helpers.MongoDbService.UpdateXPath(Guid.Parse(guid), xPath);
         }
     }
 }

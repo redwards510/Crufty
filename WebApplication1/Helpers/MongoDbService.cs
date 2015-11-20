@@ -80,5 +80,15 @@ namespace CruftyWeb.Helpers
                 await GetCourtWebSiteCollection().UpdateOneAsync(filter, update);
             }).Wait();            
         }
+
+        public static void UpdateXPath(Guid id, string xPath)
+        {
+            Task.Run(async () =>
+            {
+                var filter = Builders<CourtWebsite>.Filter.Eq("Id", id);
+                var update = Builders<CourtWebsite>.Update.Set("SelectionXPathString", xPath);
+                await GetCourtWebSiteCollection().UpdateOneAsync(filter, update);
+            }).Wait();
+        }
     }
 }
