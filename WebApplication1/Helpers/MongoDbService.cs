@@ -49,6 +49,15 @@ namespace CruftyWeb.Helpers
             return websites;
         }
 
+        /// <summary>
+        /// overload to handle a courtwebsite object
+        /// </summary>
+        /// <param name="courtWebsite"></param>
+        public static void InsertNewCourt(CourtWebsite courtWebsite)
+        {
+            InsertNewCourt(courtWebsite.CourtName, courtWebsite.Url, courtWebsite.CourtKey, courtWebsite.SelectionXPathString);
+        }
+
         public static void InsertNewCourt(string courtName, string url, string courtKey, string xPath)
         {
             var courtWebsite = new CourtWebsite
