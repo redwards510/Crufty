@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MongoDB;
+using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
 namespace Crufty
@@ -12,8 +13,10 @@ namespace Crufty
     [Serializable]
     public class CourtWebsite
     {
+
+
         [BsonId]
-        public Guid Id { get; set; }
+        public ObjectId Id { get; set; }
 
         public string CourtName { get; set; }
         public string CourtKey { get; set; }

@@ -18,21 +18,20 @@ namespace CruftyWeb.Helpers
             return database.GetCollection<CourtWebsite>("CourtWebsites");
         }
 
-        public static CourtWebsite GetCourtWebSite(Guid Id)
+        public static CourtWebsite GetCourtWebSite(ObjectId id)
         {
             CourtWebsite cw = new CourtWebsite();
             Task.Run(async () =>
             {
-                var filter = Builders<CourtWebsite>.Filter.Eq("Id", Id);
+                var filter = Builders<CourtWebsite>.Filter.Eq("Id", id);
                 cw = await GetCourtWebSiteCollection().Find(filter).FirstAsync();
             }).Wait();
             return cw;
         }
 
-        public static CourtWebsite GetCourtWebSite(string Id)
-        {
-            Guid guidId = Guid.Parse(Id);
-            return GetCourtWebSite(guidId);
+        public static CourtWebsite GetCourtWebSite(string id)
+        {            
+            return GetCourtWebSite(ObjectId.Parse(id));
         }
 
         public static IEnumerable<CourtWebsite> GetCourtWebsites(bool displayAll = false)
@@ -62,7 +61,7 @@ namespace CruftyWeb.Helpers
         {
             var courtWebsite = new CourtWebsite
             {
-                Id = Guid.NewGuid(),
+                Id = ObjectId.GenerateNewId(),
                 Url = url,
                 CourtName = courtName,
                 OldPageHtml = "Never Diffed",
@@ -80,7 +79,7 @@ namespace CruftyWeb.Helpers
             }).Wait();
         }
 
-        public static void MarkCourtAsChecked(Guid id)
+        public static void MarkCourtAsChecked(ObjectId id)
         {            
             Task.Run(async () =>
             {
@@ -90,7 +89,7 @@ namespace CruftyWeb.Helpers
             }).Wait();            
         }
 
-        public static void UpdateXPath(Guid id, string xPath)
+        public static void UpdateXPath(ObjectId id, string xPath)
         {
             Task.Run(async () =>
             {

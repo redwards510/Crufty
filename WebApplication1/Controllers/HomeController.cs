@@ -32,19 +32,19 @@ namespace CruftyWeb.Controllers
         }
 
         [HttpPost]
-        public ActionResult Mark(string guid)
+        public ActionResult Mark(string id)
         {
-            Helpers.MongoDbService.MarkCourtAsChecked(Guid.Parse(guid));
+            Helpers.MongoDbService.MarkCourtAsChecked(ObjectId.Parse(id));
             return RedirectToAction("Index");
         }
 
         [HttpPost]
         [ValidateInput(false)]
-        public void UpdateXPath(string guid, string xPath)
+        public void UpdateXPath(string id, string xPath)
         {
             xPath = HttpUtility.HtmlDecode(xPath);
             xPath = HttpUtility.HtmlDecode(xPath); // two are needed
-            Helpers.MongoDbService.UpdateXPath(Guid.Parse(guid), xPath);
+            Helpers.MongoDbService.UpdateXPath(ObjectId.Parse(id), xPath);
         }
     }
 }
