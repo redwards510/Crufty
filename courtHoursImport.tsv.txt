@@ -1,0 +1,142 @@
+CourtName	Url	CourtKey	SelectionXPathString	OldPageHtml	NewPageHtml		Checked	LastChangedDateTime	LastRunDateTime
+Alameda County	http://www.alameda.courts.ca.gov/Pages.aspx/Hours	Hours		Never Diffed	Never Diffed		FALSE	1/1/2000	1/1/2000
+Alameda 	http://www.alameda.courts.ca.gov/Pages.aspx/Hours#al	Hours		Never Diffed	Never Diffed		FALSE	1/2/2000	1/2/2000
+Berkeley	http://www.alameda.courts.ca.gov/Pages.aspx/Hours#be	Hours		Never Diffed	Never Diffed		FALSE	1/3/2000	1/3/2000
+Fremont	http://www.alameda.courts.ca.gov/Pages.aspx/Hours#fr	Hours		Never Diffed	Never Diffed		FALSE	1/4/2000	1/4/2000
+Hayward	http://www.alameda.courts.ca.gov/Pages.aspx/Hours#ha	Hours		Never Diffed	Never Diffed		FALSE	1/5/2000	1/5/2000
+Oakland - Rene C. Davidson courthouse	http://www.alameda.courts.ca.gov/Pages.aspx/Hours#oa2	Hours		Never Diffed	Never Diffed		FALSE	1/6/2000	1/6/2000
+Oakland - Wiley W. Manual courthouse	http://www.alameda.courts.ca.gov/Pages.aspx/Hours#oa1	Hours		Never Diffed	Never Diffed		FALSE	1/7/2000	1/7/2000
+San Leandro - Juvenile Justice Center	http://www.alameda.courts.ca.gov/Pages.aspx/Hours#sl	Hours		Never Diffed	Never Diffed		FALSE	1/8/2000	1/8/2000
+San Leandro - John George Psychiatric Pavillion	http://www.alameda.courts.ca.gov/Pages.aspx/Hours#jg	Hours		Never Diffed	Never Diffed		FALSE	1/9/2000	1/9/2000
+Alpine County	http://www.alpine.courts.ca.gov/Calendar/tabid/59/Default.aspx	Hours		Never Diffed	Never Diffed		FALSE	1/10/2000	1/10/2000
+Amador County	http://www.amadorcourt.org/	Hours		Never Diffed	Never Diffed		FALSE	1/11/2000	1/11/2000
+Chico - North Butte Co. Courthouse	http://www.buttecourt.ca.gov/courthouses/NCCHcourthouse.htm	Hours		Never Diffed	Never Diffed		FALSE	1/12/2000	1/12/2000
+Oroville - Butte Co. Courthouse	http://www.buttecourt.ca.gov/courthouses/BCCHcourthouse.htm	Hours		Never Diffed	Never Diffed		FALSE	1/13/2000	1/13/2000
+Calaveras County	http://www.calaveras.courts.ca.gov/info/contact	Hours		Never Diffed	Never Diffed		FALSE	1/14/2000	1/14/2000
+Colusa County	http://www.colusa.courts.ca.gov/contact_info.asp	Hours		Never Diffed	Never Diffed		FALSE	1/15/2000	1/15/2000
+Contra Costa County	http://www.cc-courts.org/index.cfm?fuseaction=Page.ViewPage&pageId=6742	Hours		Never Diffed	Never Diffed		FALSE	1/16/2000	1/16/2000
+Martinez	http://www.cc-courts.org/index.cfm?fuseaction=Page.ViewPage&pageId=6742	Hours		Never Diffed	Never Diffed		FALSE	1/17/2000	1/17/2000
+Pittsburg	http://www.cc-courts.org/index.cfm?fuseaction=Page.ViewPage&pageId=6742	Hours		Never Diffed	Never Diffed		FALSE	1/18/2000	1/18/2000
+Richmond	http://www.cc-courts.org/index.cfm?fuseaction=Page.ViewPage&pageId=6742	Hours		Never Diffed	Never Diffed		FALSE	1/19/2000	1/19/2000
+Walnut Creek	http://www.cc-courts.org/index.cfm?fuseaction=Page.ViewPage&pageId=6742	Hours		Never Diffed	Never Diffed		FALSE	1/20/2000	1/20/2000
+Del Norte County	http://www.delnorte.courts.ca.gov/	Hours		Never Diffed	Never Diffed		FALSE	1/21/2000	1/21/2000
+El Dorado County	http://eldocourtweb.eldoradocourt.org/departments/default.aspx#main	Hours		Never Diffed	Never Diffed		FALSE	1/22/2000	1/22/2000
+Cameron	http://eldocourtweb.eldoradocourt.org/departments/default.aspx#main	Hours		Never Diffed	Never Diffed		FALSE	1/23/2000	1/23/2000
+Placerville	http://eldocourtweb.eldoradocourt.org/departments/default.aspx#main	Hours		Never Diffed	Never Diffed		FALSE	1/24/2000	1/24/2000
+South Lake Tahoe	http://eldocourtweb.eldoradocourt.org/departments/default.aspx#main	Hours		Never Diffed	Never Diffed		FALSE	1/25/2000	1/25/2000
+Fresno County	http://www.fresno.courts.ca.gov/courthouses/	Hours		Never Diffed	Never Diffed		FALSE	1/26/2000	1/26/2000
+B. F. Sisk	http://www.fresno.courts.ca.gov/courthouses/	Hours		Never Diffed	Never Diffed		FALSE	1/27/2000	1/27/2000
+M Street	http://www.fresno.courts.ca.gov/courthouses/	Hours		Never Diffed	Never Diffed		FALSE	1/28/2000	1/28/2000
+Glenn County	http://www.glenncourt.ca.gov/general_info/hours.html	Hours		Never Diffed	Never Diffed		FALSE	1/29/2000	1/29/2000
+Orland	http://www.glenncourt.ca.gov/general_info/hours.html	Hours		Never Diffed	Never Diffed		FALSE	1/30/2000	1/30/2000
+Humboldt County	http://www.humboldt.courts.ca.gov/gi/contact.htm	Hours		Never Diffed	Never Diffed		FALSE	1/31/2000	1/31/2000
+Imperial County	http://www.imperial.courts.ca.gov/Hr.htm	Hours		Never Diffed	Never Diffed		FALSE	2/1/2000	2/1/2000
+El Centro	http://www.imperial.courts.ca.gov/Hr.htm	Hours		Never Diffed	Never Diffed		FALSE	2/2/2000	2/2/2000
+Brawley	http://www.imperial.courts.ca.gov/Hr.htm	Hours		Never Diffed	Never Diffed		FALSE	2/3/2000	2/3/2000
+Winterhaven	http://www.imperial.courts.ca.gov/Hr.htm	Hours		Never Diffed	Never Diffed		FALSE	2/4/2000	2/4/2000
+Inyo	http://www.inyocourt.ca.gov/	Hours		Never Diffed	Never Diffed		FALSE	2/5/2000	2/5/2000
+Bishop	http://www.inyocourt.ca.gov/	Hours		Never Diffed	Never Diffed		FALSE	2/6/2000	2/6/2000
+Kern County	http://www.kern.courts.ca.gov/home.aspx	Hours		Never Diffed	Never Diffed		FALSE	2/7/2000	2/7/2000
+Bakersfield	http://www.kern.courts.ca.gov/home.aspx	Hours		Never Diffed	Never Diffed		FALSE	2/8/2000	2/8/2000
+East Division	http://www.kern.courts.ca.gov/home.aspx	Hours		Never Diffed	Never Diffed		FALSE	2/9/2000	2/9/2000
+North Division	http://www.kern.courts.ca.gov/home.aspx	Hours		Never Diffed	Never Diffed		FALSE	2/10/2000	2/10/2000
+South Division	http://www.kern.courts.ca.gov/home.aspx	Hours		Never Diffed	Never Diffed		FALSE	2/11/2000	2/11/2000
+Kings County	http://www.kings.courts.ca.gov/main.aspx	Hours		Never Diffed	Never Diffed		FALSE	2/12/2000	2/12/2000
+Hanford	http://www.kings.courts.ca.gov/locations/Hanford_Courthouse.asp	Hours		Never Diffed	Never Diffed		FALSE	2/13/2000	2/13/2000
+Avenal	http://www.kings.courts.ca.gov/locations/Avenal_Courthouse.asp	Hours		Never Diffed	Never Diffed		FALSE	2/14/2000	2/14/2000
+Corcoran	http://www.kings.courts.ca.gov/locations/Corcoran_Courthouse.asp	Hours		Never Diffed	Never Diffed		FALSE	2/15/2000	2/15/2000
+Lake County	http://www.lake.courts.ca.gov/gi/lakeport.htm	Hours		Never Diffed	Never Diffed		FALSE	2/16/2000	2/16/2000
+Clearlake	http://www.lake.courts.ca.gov/gi/clearlake.htm	Hours		Never Diffed	Never Diffed		FALSE	2/17/2000	2/17/2000
+Lassen County	http://www.lassencourt.ca.gov/index.shtml	Hours		Never Diffed	Never Diffed		FALSE	2/18/2000	2/18/2000
+LA County	http://www.lacourt.org/courthouse/info/lax	Hours		Never Diffed	Never Diffed		FALSE	2/19/2000	2/19/2000
+Alhambra	http://www.lacourt.org/courthouse/info/alh	Hours		Never Diffed	Never Diffed		FALSE	2/20/2000	2/20/2000
+Bellflower	http://www.lacourt.org/courthouse/info/lc	Hours		Never Diffed	Never Diffed		FALSE	2/21/2000	2/21/2000
+Beverely Hills	http://www.lacourt.org/courthouse/info/bh	Hours		Never Diffed	Never Diffed		FALSE	2/22/2000	2/22/2000
+Burbank	http://www.lacourt.org/courthouse/info/bur	Hours		Never Diffed	Never Diffed		FALSE	2/23/2000	2/23/2000
+Catalina	http://www.lacourt.org/courthouse/info/cat	Hours		Never Diffed	Never Diffed		FALSE	2/24/2000	2/24/2000
+Central Civil West	http://www.lacourt.org/courthouse/info/ccw	Hours		Never Diffed	Never Diffed		FALSE	2/25/2000	2/25/2000
+Chatsworth	http://www.lacourt.org/courthouse/info/cha	Hours		Never Diffed	Never Diffed		FALSE	2/26/2000	2/26/2000
+Compton	http://www.lacourt.org/courthouse/info/com	Hours		Never Diffed	Never Diffed		FALSE	2/27/2000	2/27/2000
+Downey	http://www.lacourt.org/courthouse/info/dow	Hours		Never Diffed	Never Diffed		FALSE	2/28/2000	2/28/2000
+East LA	http://www.lacourt.org/courthouse/info/ela	Hours		Never Diffed	Never Diffed		FALSE	2/29/2000	2/29/2000
+El Monte	http://www.lacourt.org/courthouse/info/elm	Hours		Never Diffed	Never Diffed		FALSE	3/1/2000	3/1/2000
+Glendale	http://www.lacourt.org/courthouse/info/gln	Hours		Never Diffed	Never Diffed		FALSE	3/2/2000	3/2/2000
+Gov. George Deukmejian	http://www.lacourt.org/courthouse/info/lb	Hours		Never Diffed	Never Diffed		FALSE	3/3/2000	3/3/2000
+Hollywood	http://www.lacourt.org/courthouse/info/hc	Hours		Never Diffed	Never Diffed		FALSE	3/4/2000	3/4/2000
+Inglewood	http://www.lacourt.org/courthouse/info/ing	Hours		Never Diffed	Never Diffed		FALSE	3/5/2000	3/5/2000
+Mental Health	http://www.lacourt.org/courthouse/info/mh	Hours		Never Diffed	Never Diffed		FALSE	3/6/2000	3/6/2000
+Metropolitan	http://www.lacourt.org/courthouse/info/met	Hours		Never Diffed	Never Diffed		FALSE	3/7/2000	3/7/2000
+Michael Antonovich Antelope Valley	http://www.lacourt.org/courthouse/info/atp	Hours		Never Diffed	Never Diffed		FALSE	3/8/2000	3/8/2000
+Norwalk	http://www.lacourt.org/courthouse/info/se	Hours		Never Diffed	Never Diffed		FALSE	3/9/2000	3/9/2000
+Pasadena	http://www.lacourt.org/courthouse/info/pas	Hours		Never Diffed	Never Diffed		FALSE	3/10/2000	3/10/2000
+Pomona	http://www.lacourt.org/courthouse/info/ea	Hours		Never Diffed	Never Diffed		FALSE	3/11/2000	3/11/2000
+San Fernando	http://www.lacourt.org/courthouse/info/las	Hours		Never Diffed	Never Diffed		FALSE	3/12/2000	3/12/2000
+Santa Clarita	http://www.lacourt.org/courthouse/info/new	Hours		Never Diffed	Never Diffed		FALSE	3/13/2000	3/13/2000
+Santa Monica	http://www.lacourt.org/courthouse/info/sm	Hours		Never Diffed	Never Diffed		FALSE	3/14/2000	3/14/2000
+Stanley Mosk	http://www.lacourt.org/courthouse/info/la	Hours		Never Diffed	Never Diffed		FALSE	3/15/2000	3/15/2000
+Torrance	http://www.lacourt.org/courthouse/info/sba	Hours		Never Diffed	Never Diffed		FALSE	3/16/2000	3/16/2000
+Van Nuys	http://www.lacourt.org/courthouse/info/nw	Hours		Never Diffed	Never Diffed		FALSE	3/17/2000	3/17/2000
+West Covina	http://www.lacourt.org/courthouse/info/cit	Hours		Never Diffed	Never Diffed		FALSE	3/18/2000	3/18/2000
+Madera County	http://madera.courts.ca.gov/MaderaJury.htm	Hours		Never Diffed	Never Diffed		FALSE	3/19/2000	3/19/2000
+Bass Lake	http://madera.courts.ca.gov/MaderaJury.htm	Hours		Never Diffed	Never Diffed		FALSE	3/20/2000	3/20/2000
+Mariposa County	http://www.mariposacourt.org/	Hours		Never Diffed	Never Diffed		FALSE	3/21/2000	3/21/2000
+Mendocino County	http://www.mendocino.courts.ca.gov/general_info/ukiah.asp	Hours		Never Diffed	Never Diffed		FALSE	3/22/2000	3/22/2000
+Fort Bragg	http://www.mendocino.courts.ca.gov/general_info/fortbragg.asp	Hours		Never Diffed	Never Diffed		FALSE	3/23/2000	3/23/2000
+Point Arena	http://www.mendocino.courts.ca.gov/general_info/pointarena.asp	Hours		Never Diffed	Never Diffed		FALSE	3/24/2000	3/24/2000
+Merced County	http://www.mercedcourt.org/hours_of_operation.shtml	Hours		Never Diffed	Never Diffed		FALSE	3/25/2000	3/25/2000
+Los Banos	http://www.mercedcourt.org/hours_of_operation.shtml	Hours		Never Diffed	Never Diffed		FALSE	3/26/2000	3/26/2000
+Mono County	http://www.monocourt.org/location.htm	Hours		Never Diffed	Never Diffed		FALSE	3/27/2000	3/27/2000
+Mammoth Lakes	http://www.monocourt.org/location.htm	Hours		Never Diffed	Never Diffed		FALSE	3/28/2000	3/28/2000
+Monterey County	http://www.monterey.courts.ca.gov/General_Information/Locations.aspx	Hours		Never Diffed	Never Diffed		FALSE	3/29/2000	3/29/2000
+Salinas	http://www.monterey.courts.ca.gov/General_Information/Locations.aspx	Hours		Never Diffed	Never Diffed		FALSE	3/30/2000	3/30/2000
+Marina	http://www.monterey.courts.ca.gov/General_Information/Locations.aspx	Hours		Never Diffed	Never Diffed		FALSE	3/31/2000	3/31/2000
+Napa County	http://www.napa.courts.ca.gov/general-info/contacts-locations	Hours		Never Diffed	Never Diffed		FALSE	4/1/2000	4/1/2000
+Nevada County	http://www.nevadacountycourts.com/services/general_info/gen_info.htm	Hours		Never Diffed	Never Diffed		FALSE	4/2/2000	4/2/2000
+Truckee	http://www.nevadacountycourts.com/services/general_info/gen_info.htm	Hours		Never Diffed	Never Diffed		FALSE	4/3/2000	4/3/2000
+Orange County	http://www.occourts.org/locations/community-court.html	Hours		Never Diffed	Never Diffed		FALSE	4/4/2000	4/4/2000
+Placer County	http://www.placer.courts.ca.gov/court-hours.html	Hours		Never Diffed	Never Diffed		FALSE	4/5/2000	4/5/2000
+Historic	http://www.placer.courts.ca.gov/court-hours.html	Hours		Never Diffed	Never Diffed		FALSE	4/6/2000	4/6/2000
+Plumas County	http://www.plumascourt.ca.gov/Contact.htm	Hours		Never Diffed	Never Diffed		FALSE	4/7/2000	4/7/2000
+Riverside County	http://www.riverside.courts.ca.gov/bldgs/historic.shtml	Hours		Never Diffed	Never Diffed		FALSE	4/8/2000	4/8/2000
+Sacramento County	https://www.saccourt.ca.gov/locations/locations.aspx	Hours		Never Diffed	Never Diffed		FALSE	4/9/2000	4/9/2000
+William R. Ridgeway	https://www.saccourt.ca.gov/locations/locations.aspx	Hours		Never Diffed	Never Diffed		FALSE	4/10/2000	4/10/2000
+San Bernardino	http://www.sb-court.org/Locations/Barstow.aspx	Hours		Never Diffed	Never Diffed		FALSE	4/11/2000	4/11/2000
+Fontana	http://www.sb-court.org/Locations/Fontana.aspx	Hours		Never Diffed	Never Diffed		FALSE	4/12/2000	4/12/2000
+Joshua Tree	http://www.sb-court.org/Locations/JoshuaTree.aspx	Hours		Never Diffed	Never Diffed		FALSE	4/13/2000	4/13/2000
+San Diego County	"http://www.sdcourt.ca.gov/portal/page?_pageid=55,1635873&_dad=portal&_schema=PORTAL"	Hours		Never Diffed	Never Diffed		FALSE	4/14/2000	4/14/2000
+Madge Bradley	"http://www.sdcourt.ca.gov/portal/page?_pageid=55,1635873&_dad=portal&_schema=PORTAL"	Hours		Never Diffed	Never Diffed		FALSE	4/15/2000	4/15/2000
+Kearny Mesa	"http://www.sdcourt.ca.gov/portal/page?_pageid=55,1635873&_dad=portal&_schema=PORTAL"	Hours		Never Diffed	Never Diffed		FALSE	4/16/2000	4/16/2000
+East	"http://www.sdcourt.ca.gov/portal/page?_pageid=55,1635873&_dad=portal&_schema=PORTAL"	Hours		Never Diffed	Never Diffed		FALSE	4/17/2000	4/17/2000
+North 	"http://www.sdcourt.ca.gov/portal/page?_pageid=55,1635873&_dad=portal&_schema=PORTAL"	Hours		Never Diffed	Never Diffed		FALSE	4/18/2000	4/18/2000
+South	"http://www.sdcourt.ca.gov/portal/page?_pageid=55,1635873&_dad=portal&_schema=PORTAL"	Hours		Never Diffed	Never Diffed		FALSE	4/19/2000	4/19/2000
+San Joaquin County	https://www.sjcourts.org/general-info/court-locations-contact/hours-of-operation-holiday-schedule/	Hours		Never Diffed	Never Diffed		FALSE	4/20/2000	4/20/2000
+Stockton Family	https://www.sjcourts.org/general-info/court-locations-contact/hours-of-operation-holiday-schedule/	Hours		Never Diffed	Never Diffed		FALSE	4/21/2000	4/21/2000
+San Luis Obispo County	http://slocourts.net/about	Hours		Never Diffed	Never Diffed		FALSE	4/22/2000	4/22/2000
+San Mateo County	http://www.sanmateocourt.org/general_info/locations_and_contact_info/hours.php#central	Hours		Never Diffed	Never Diffed		FALSE	4/23/2000	4/23/2000
+Santa Barbara County	http://www.sbcourts.org/gi/loc/sb.shtm	Hours		Never Diffed	Never Diffed		FALSE	4/24/2000	4/24/2000
+Santa Maria	http://www.sbcourts.org/gi/loc/sm.shtm	Hours		Never Diffed	Never Diffed		FALSE	4/25/2000	4/25/2000
+Lompoc	http://www.sbcourts.org/gi/loc/lm.shtm	Hours		Never Diffed	Never Diffed		FALSE	4/26/2000	4/26/2000
+Solvang	http://www.sbcourts.org/gi/loc/sv.shtm	Hours		Never Diffed	Never Diffed		FALSE	4/27/2000	4/27/2000
+Santa Clara County	http://www.scscourt.org/general_info/contact/courthouses/santaclara.shtml	Hours		Never Diffed	Never Diffed		FALSE	4/28/2000	4/28/2000
+Notre Dame	http://www.scscourt.org/general_info/contact/courthouses/notredame.shtml	Hours		Never Diffed	Never Diffed		FALSE	4/29/2000	4/29/2000
+Palo Alto	http://www.scscourt.org/general_info/contact/courthouses/paloalto.shtml	Hours		Never Diffed	Never Diffed		FALSE	4/30/2000	4/30/2000
+Sunnyvale	http://www.scscourt.org/general_info/contact/courthouses/sunnyvale.shtml	Hours		Never Diffed	Never Diffed		FALSE	5/1/2000	5/1/2000
+Terraine	http://www.scscourt.org/general_info/contact/courthouses/terraine.shtml	Hours		Never Diffed	Never Diffed		FALSE	5/2/2000	5/2/2000
+Santa Cruz County	http://www.santacruzcourt.org/info/locations-contact	Hours		Never Diffed	Never Diffed		FALSE	5/3/2000	5/3/2000
+Watsonville	http://www.santacruzcourt.org/info/locations-contact	Hours		Never Diffed	Never Diffed		FALSE	5/4/2000	5/4/2000
+Shasta County	http://www.shastacourts.com/General-Info/Administration.shtml	Hours		Never Diffed	Never Diffed		FALSE	5/5/2000	5/5/2000
+Sierra County	http://sierracourt.org/GeneralInfo/tabid/55/Default.aspx	Hours		Never Diffed	Never Diffed		FALSE	5/6/2000	5/6/2000
+Solano County	http://www.solano.courts.ca.gov/GeneralInformation/Administration.html	Hours		Never Diffed	Never Diffed		FALSE	5/7/2000	5/7/2000
+Sonoma County	http://sonoma.courts.ca.gov/	Hours		Never Diffed	Never Diffed		FALSE	5/8/2000	5/8/2000
+Stanislaus County	http://www.stanct.org/operating-hours	Hours		Never Diffed	Never Diffed		FALSE	5/9/2000	5/9/2000
+Sutter County	http://www.suttercourts.com/	Hours		Never Diffed	Never Diffed		FALSE	5/10/2000	5/10/2000
+East	http://www.suttercourts.com/	Hours		Never Diffed	Never Diffed		FALSE	5/11/2000	5/11/2000
+Tehama County	http://www.tehamacourt.ca.gov/directions.htm	Hours		Never Diffed	Never Diffed		FALSE	5/12/2000	5/12/2000
+Trinity County	http://www.trinity.courts.ca.gov/	Hours		Never Diffed	Never Diffed		FALSE	5/13/2000	5/13/2000
+Tulare County	http://www.tularesuperiorcourt.ca.gov/index.php?section=locations-and-contact	Hours		Never Diffed	Never Diffed		FALSE	5/14/2000	5/14/2000
+Dinuba	http://www.tularesuperiorcourt.ca.gov/index.php?section=locations-and-contact	Hours		Never Diffed	Never Diffed		FALSE	5/15/2000	5/15/2000
+Tuolumne County	http://www.tuolumne.courts.ca.gov/general-info/directions.shtml	Hours		Never Diffed	Never Diffed		FALSE	5/16/2000	5/16/2000
+Ventura County	http://www.ventura.courts.ca.gov/locations.html	Hours		Never Diffed	Never Diffed		FALSE	5/17/2000	5/17/2000
+SImi Valley	http://www.ventura.courts.ca.gov/locations.html	Hours		Never Diffed	Never Diffed		FALSE	5/18/2000	5/18/2000
+Yolo County	http://www.yolo.courts.ca.gov/	Hours		Never Diffed	Never Diffed		FALSE	5/19/2000	5/19/2000
+Yuba County	http://www.yubacourts.org/	Hours		Never Diffed	Never Diffed		FALSE	5/20/2000	5/20/2000
