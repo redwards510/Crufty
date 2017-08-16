@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
@@ -13,7 +14,7 @@ namespace CruftyWeb.Helpers
     {
         public static IMongoCollection<CourtWebsite> GetCourtWebSiteCollection()
         {
-            var client = new MongoClient("mongodb://dev-web-ext");
+            var client = new MongoClient(ConfigurationManager.ConnectionStrings["MongoServer"].ConnectionString);
             var database = client.GetDatabase("CourtCruft");
             return database.GetCollection<CourtWebsite>("CourtWebsites");
         }
